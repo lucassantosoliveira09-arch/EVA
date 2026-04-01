@@ -1,0 +1,39 @@
+# Lista de personagens de Neon Genesis Evangelion e seus respectivos EVAs
+eva_pilots = [
+    {
+        "nome": "Shinji Ikari",
+        "unidade": "EVA Unit-01",
+        "designacao": "Third Child"
+    },
+    {
+        "nome": "Rei Ayanami",
+        "unidade": "EVA Unit-00",
+        "designacao": "First Child"
+    },
+    {
+        "nome": "Asuka Langley Soryu",
+        "unidade": "EVA Unit-02",
+        "designacao": "Second Child"
+    },
+    {
+        "nome": "Mari Illustrious Makinami",
+        "unidade": "EVA Unit-05 / Unit-08",
+        "designacao": "Extra / Provisional Pilot"
+    },
+    {
+        "nome": "Misato Katsuragi",
+        "unidade": "Nenhum (Comandante de Operações)",
+        "designacao": "Capitã/Major na NERV"
+    }
+]
+
+def exibir_pilotos(lista):
+    print("--- Registro de Pilotos NERV ---")
+    for personagem in lista:
+        print(f"Personagem: {personagem['nome']}")
+        print(f"Unidade: {personagem['unidade']}")
+        print(f"Cargo: {personagem['designacao']}")
+        print("-" * 30)
+
+# Executar a função
+exibir_pilotos(eva_pilots)
